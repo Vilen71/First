@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@use "sass:math";
+
+@import "../scss/base/mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,600,700);
+//======================================= Font =========================================
+
+$fontFamily: "Montserrat";
+$fontSize: rem(14);
+
+$mainColor: #000;
+
+
+//todo ======================= - Per - =======================//
+
+$mainDarkColor: #141414;
+$mainOrangeColor: #E8AA31;
+
+//======================================= Settings =========================================
+$minWidth: 320;
+
+$maxWidth: 1920;
+
+$maxWidthContainer: 1620;
+
+$containerPadding: 30;
+
+$containerWidth: $containerPadding + $maxWidthContainer;
+
+
+/*Обнуление*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  font-family: $fontFamily;
+  color: $mainColor;
+  font-size: rem(18);
+  line-height: 1.5;
+  list-style: none;
+  
+  &.lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+a {
+  color: $mainColor;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: rem(40);
+  line-height: 1;
+}
+
+h2 {
+  font-size: rem(30);
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+[class*=__container] {
+  max-width: rem($containerWidth);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+//* ================================ RESET / Var ================================//
+
+$pc: $containerWidth;
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+//* ================================ RESET / Bem ================================//
+
+
+.button-yellow {
+  display: inline-block;
+  padding: rem(2) rem(52);
+  background-color: $mainOrangeColor;
+  box-shadow: 0px 4px 20px rgba(232, 170, 49, 0.43);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: #d49b2a;
+    box-shadow: 0px 4px 25px rgba(232, 170, 49, 0.63);
+}
+
+  & a {
+    font-size: rem(20);
+    line-height: lh(42,20);
+    color: #fff;
+  }
+}

@@ -1,0 +1,340 @@
+@import "nullestyle.scss";
+
+//?================================ ALL ================================*/
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper {}
+
+
+
+//!================================ ALL ================================*/
+
+//?================================ HEADER ================================*/
+
+.header {
+	padding: 30px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+		&__container {
+			min-height: 40px;
+			display: flex;
+			align-items: center;
+			font-weight: 600;
+			text-transform: uppercase;
+			justify-content: space-between;
+		}
+
+		&__logo {
+			background: url("../img/1.png") no-repeat left center;
+			font-size: 20px;
+			font-weight: 600;
+			padding-left: 80px;
+			line-height: 37px;
+			
+			& img {
+				max-width: 100%;
+			}
+
+			& a {
+				color: #fff;
+				text-decoration: none;
+		}
+
+		}
+
+		&__nav {
+		}
+
+		&__list {
+			display: flex;
+		}
+
+		&__item {
+			& a {
+				text-decoration: none;
+				color: #fff;
+			}
+			&:not(:first-child) a {opacity: 50%;}
+			&:not(:last-child) {margin-right: 50px;}
+			&:hover {text-decoration: underline;}
+		}
+
+		&__btn {
+		}
+
+		&__login {
+			margin-right: 44px;
+			color: #fff;
+			text-decoration: none;
+			&:hover {text-decoration: underline;}
+		}
+
+		&__btn-link {
+			border-radius: 20px;
+			padding: 10px 44px;
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: .2s all;
+			&:hover {background-color: rgba(255, 255, 255, 0.748);}
+		}
+}
+
+//!================================ /HEADER ================================*/
+
+//?================================ BUILD ================================*/
+
+.build {
+		background: url("../img/Background.png") no-repeat;
+		background-size: cover;
+		min-height: 100vh;
+		
+	&__container {
+		padding-top: 211px;
+	}
+
+	&__body {
+		max-width: 506px;
+		color: #fff;
+	}
+
+	&__title {
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 60px;
+		margin-bottom: 10px;
+	}
+
+	&__desk {
+		font-size: 24px;
+		line-height: 55px;
+		margin-bottom: 60px;
+	}
+
+	&__btn {
+		background-color: #FFCA00;
+		padding: 13px 40px;
+		border-radius: 25px;
+		font-weight: 600;
+		color: #250F8A;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: .2s all;
+
+		&:hover {background-color: #dab51f;}
+	}
+}
+
+//!================================ /BUILD ================================*/
+
+//?================================ DEVICE ================================*/
+
+.device {
+	padding: 35px 0 93px;	
+	background: url("../img/3.svg") no-repeat left 44px;
+
+	&__container {
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 45px;
+		margin-bottom: 96px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: center;
+		column-gap: 70px;
+	}
+
+	&__column {
+		max-width: 280px;
+	}
+}
+.column {
+
+	&__item {
+		text-align: center;
+	} 
+
+	&__img {
+		height: 160px;
+		& img {max-width: 100%;}
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__desk {
+	}
+}
+
+
+//!================================ /DEVICE ================================*/
+
+//?================================ DESIGN =================================*/
+
+.design {
+	background: url("../img/11.svg") no-repeat 1380px 750px #F4F9FD;
+
+	&__container {
+		padding: 84px 0 50px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&:not(:last-child) {padding-bottom: 50px;}
+		
+		&_1 .design__body{
+			background: url("../img/7.svg") no-repeat 15px 20px;
+		}
+		&_2 .design__body{
+			background: url("../img/12.svg") no-repeat left 50px;
+		}
+		&_3 .design__body{
+			background: url("../img/13.svg") no-repeat 15px 35px;
+		}
+	}
+
+	&__body {
+		max-width: 455px;
+		margin-right: 15px;
+		padding: 68px 0 0 47px;
+	}
+
+	&__title {
+		font-family: Source Sans Pro;
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 45px;
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		margin-bottom: 30px;
+	}
+
+	&__desk {
+	}
+
+	&__img {
+		& img {max-width: 100%;}
+	}
+}
+
+//!================================ /DESIGN ================================*/
+
+//?================================ JUST =================================*/
+
+.just {
+	padding: 38px 0 82px;
+	background: url("../img/bg.jpg") no-repeat;
+	background-size: cover;
+
+	&__container {
+}
+
+	&__title {
+		max-width: 380px;
+		text-align: center;
+		color: #fff;
+		font-size: 35px;
+		font-weight: 700;
+		line-height: 45px;
+		margin: 0 auto;
+		padding-bottom: 48px;
+	}
+
+	&__row {
+		padding: 0 115px;
+		display: flex;
+		justify-content: space-between;
+		column-gap: 20px;
+	}
+
+	&__item {
+		padding: 35px 20px;
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+		background-color: rgba(255,255,255,0.2);
+	}
+
+	&__man {
+		display: flex;
+		margin-bottom: 13px;
+	}
+
+	&__man-img {
+		padding-right: 19px;
+		& img {max-width: 100%;}
+	}
+
+	&__man-info {
+	}
+}
+
+.just-item {
+
+	&__name {
+		font-weight: 600;
+	}
+
+	&__desk {
+		opacity: 50%;
+	}
+
+	&__img {
+		margin-bottom: 12px;
+	}
+
+	&__text {
+	}
+}
+
+
+//!================================ /JUST ================================*/
+
+//?================================ FOOTER ================================*/
+
+.footer {
+	padding: 19px 0;
+
+	&__container {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 40px;
+	}
+
+	&__text {
+		display: flex;
+	}
+
+	&__link {
+		margin-right: 30px;
+	}
+
+	&__desk {
+	}
+}
+
+//!================================ /FOOTER ================================*/
+@import "media.scss";

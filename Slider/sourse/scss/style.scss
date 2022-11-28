@@ -1,0 +1,70 @@
+@import "nullestyle.scss";
+
+body {background-color: #333;}
+
+.wrapper {
+   padding: 20px 80px;
+   min-height: 100%;
+   overflow-x: hidden;
+}
+.image-slider {
+   padding: 130px 0 70px 0;
+
+		&__wrapper {
+		}
+
+		&__slide {
+		}
+
+		&__image {
+         text-align: center;
+         & img {max-width: 100%;}
+		}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.image-slider .swiper-button-prev::after {
+}
+.image-slider .swiper-button-next::after {
+}
+
+
+.image-slider .swiper-button-prev::after ,
+.image-slider .swiper-button-next::after {
+   color: #fff;
+   font-size: 90px;
+}
+
+.image-slider .swiper-pagination {
+}
+.image-slider .swiper-pagination-bullet {
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+   font-size: 14px;
+   background-color: #000;
+   color: #fff;
+}
+
+//Фракция
+.image-slider .swiper-pagination-fraction {
+   font-size: 40px;
+   color: #fff;
+}
+
+//Прогрессбар 
+.image-slider .swiper-pagination-progressbar-fill {
+   background-color: #7a956b !important;
+}
+
+//Скролл
+.swiper-scrollbar-drag {
+   top: auto !important;
+   cursor: pointer;
+   background: green !important;
+}

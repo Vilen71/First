@@ -1,0 +1,486 @@
+@import "nullestyle.scss";
+
+//?============================= ALL ============================//
+
+[class*="__container"] {
+	max-width: 1180px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: Roboto;
+	text-align: center;
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 700;
+	color: #2f3f54;
+	
+	& span {color: #42d6c1;}
+}
+
+.red {
+	color: #e74c3c;
+}
+
+.blue {
+	color: #42d6c1;
+}
+
+.decor {
+	display: flex;
+	justify-content: center;
+}
+
+.f {
+	font-family: Lato;
+	color: #fff;
+	margin-bottom: 10px;
+	background-color: #2f3f54;
+	padding: 15px 10px;
+	border: 1px solid gray;
+	outline: none;
+}
+
+*::placeholder {
+	font-family: Lato;
+	font-size: 11px;
+	line-height: 1.2;
+	font-weight: 400;
+	color: #718db2;
+}
+//!============================= /ALL ============================//
+
+//?============================= HEADER ============================//
+
+.header {
+	width: 100%;
+	padding: 22px 0;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	&__container {
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.menu {
+
+	&__logo {
+		display: flex;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	&__list {
+	}
+
+	&__item {
+		font-family: "Open Sans";
+		font-weight: 700;
+		line-height: 1.2;
+		color: #2f3f54;
+		text-decoration: none;
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+		&:hover {opacity: 0.6;}
+	}
+}
+
+//!============================= /HEADER ============================//
+
+//?============================= HERO ============================//
+
+.hero {
+	margin-top: 86px;
+	padding: 100px 0 140px;
+	background: url("../img/fon.png") center;
+
+		&__container {
+			display: flex;
+			color: #fff;
+		}
+
+		&__body {
+			margin-right: 48px;
+		}
+
+		&__overtitle {
+			margin-bottom: 18px;
+		}
+
+		&__title {
+			font-family: "Roboto";
+			font-size: 48px;
+			line-height: 52px;
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-bottom: 26px;
+		}
+
+		&__price {
+			font-size: 19px;
+			line-height: 52px;
+			font-weight: 700;
+			margin-bottom: 14px;
+		}
+
+		&__subtitle {
+			margin-bottom: 42px;
+		}
+
+		&__list {
+			margin-bottom: 53px;
+		}
+
+		&__btn {
+			width: 224px;
+			height: 47px;
+			color: #fff;
+			text-transform: uppercase;
+			border: 3px solid #fff;
+			border-radius: 23.5px;
+			background-color: inherit;
+			font-size: 14px;
+			margin-bottom: 18px;
+
+			&:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+			&:active {
+				position: relative;
+				top: 1px;
+			}
+
+		}
+
+		&__desk {
+		}
+
+		&__img {
+			position: relative;
+			padding-top: 13px;
+		}
+}
+
+.list {
+		&__item {
+			display: block;
+			color: #fff;
+			font-size: 16px;
+			line-height: 27px;
+			font-weight: 700;
+			padding-left: 35px;
+			background: url(../img/done.png) no-repeat left center;
+		}
+}
+
+.img {
+
+	&__item {
+		width: 229px;
+		height: 229px;
+		background-color: #fff;
+		color: #212121;
+		border-radius: 50%;
+		position: absolute;
+		top: -30px;
+		right: -90px;
+	}
+
+	&__over {
+		display: inline-block;
+		padding: 73px 0 0 57px;
+	}
+
+	&__price {
+		display: inline-block;
+		padding: 10px 0 0 57px;
+		font-size: 54px;
+		line-height: 30px;
+		font-weight: 700;
+	}
+
+	&__sub {
+		display: inline-block;
+		padding: 3px 0 0 133px;
+	}
+}
+
+
+
+//!============================= /HERO ============================//
+
+//?============================= PERSONAL ============================//
+
+.personal {
+	padding: 120px 0 100px;
+
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 47px;
+	}
+
+	&__desk {
+		max-width: 590px;
+		text-align: center;
+		margin: 0 auto 80px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__item {
+		height: 100%;
+		max-width: 360px;
+		padding: 28px 46px 0;
+		text-align: center;
+		flex: 1 1 33.33%;
+		box-shadow: 0px 21px 49px 1px rgba(41,44,61,0.15);
+		border-radius: 2px 2px 0px 0px;
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+
+.item {
+
+	&__price {
+		font-family: Roboto;
+		font-size: 22.7px;
+		line-height: 20px;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		color: #fff;
+		margin-bottom: 70px;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__img {
+		margin-bottom: 50px;
+		& img {min-height: 86px;}
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-size: 31.3px;
+		line-height: 50px;
+		font-weight: 700;
+		color: #267ae9;
+		margin-bottom: 15px;
+	}
+
+	&__desk {
+		margin-bottom: 40px;
+	}
+
+	&__list {
+		text-align: left;
+		margin-bottom: 100px;
+	}
+
+	&__list-link {
+		padding-left: 35px;
+		font-size: 16px;
+		line-height: 36px;
+		letter-spacing: 0.04em;
+		background: url("../img/done.png") no-repeat left center;
+	}
+
+	&__btn {
+		display: inline-block;
+		min-width: 100%;
+		background-color: #267ae9;
+		border-radius: 0px 0px 2px 2px;
+		padding: 18px 0;
+		color: #fff;
+		text-decoration: none;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+
+		&:hover {background-color: #1f65c1;}
+
+		&:active {
+			bottom: -1px;
+		}
+	}
+
+	&__decor {
+		position: absolute;
+		width: 300px;
+		height: 350px;
+		background-color: #267ae9;
+		border-radius: 50%;
+		top: -270px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+//!============================= PERSONAL ============================//
+
+//?============================= PEOPLE ============================//
+
+.people {
+	background-color: #fafafa8c;
+	padding: 60px 0;
+
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 70px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	&__item {
+		display: flex;
+		box-shadow: 0px 21px 49px 1px rgba(41,44,61,0.15);
+	}
+
+	&__img {
+		padding: 40px 30px;
+		background-color: #267ae9;
+		& img {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__body {
+		max-width: 245px;
+		box-sizing: content-box;
+		padding: 40px 30px;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 40px;
+	}
+
+	&__desk {
+	}
+
+	&__decor {
+		width: 10px;
+		height: 10px;
+		background-color: #267ae9;
+		border-radius: 50%;
+		&_2 {
+			background-color: #fff;
+			border: 2px solid #267ae9;
+			border-radius: 50%;
+		}
+
+		&:not(:last-child) {margin-right: 12px;}
+	}
+}
+
+//!============================= /PEOPLE ============================//
+
+//?============================= PROGRAMMS ============================//
+
+.programms {
+	padding: 90px 20px;
+
+	&__container {
+	}
+
+	&__img {
+		max-width: 100%;
+	}
+}
+
+
+//!============================= /PROGRAMMS ============================//
+
+//?============================= FOOTER ============================//
+
+.footer {
+	background-color: #2f3f54;
+
+	&__container {
+		padding: 80px 60px;
+	}
+
+	&__title {
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 1.2;
+		color: #d0e4ff;
+		text-align: right;
+		margin: 0 70px 30px 0;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+
+	}
+
+	&__form {
+		max-width: 270px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__name {
+	}
+
+	&__email {
+	}
+
+	&__password {
+	}
+
+	&__area {
+		height: 86px;
+		margin-bottom: 30px;
+	}
+	
+	&__btn {
+		max-width: 60px;
+		padding: 12px;
+		background-color: #2575e7;
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: uppercase;
+		font-size: 12px;
+		transition: .2s;
+
+		&:hover {
+			background-color: #2c67b9;
+		}
+	}
+}
+
+//!============================= /FOOTER ============================//

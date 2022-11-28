@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@use "sass:math";
+
+@import "../scss/base/mixins.scss";
+//======================================= Font =========================================
+
+$fontFamily: "";
+$fontSize: rem(14);
+// Если $fontSize пуст,то поменяй значение миксина em на 16
+
+$mainColor: #000;
+
+//todo ======================= - Per - =======================//
+
+
+//======================================= Settings =========================================
+$minWidth: 320;
+
+$maxWidth: 1920;
+
+$maxWidthContainer: 1190;
+
+$containerPadding: 30;
+
+$containerWidth: $containerPadding + $maxWidthContainer;
+
+/*Обнуление*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  font-family: $fontFamily;
+  color: $mainColor;
+  font-size: rem(16);
+  line-height: 1.5;
+  list-style: none;
+  
+  &.lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: rem(40);
+  line-height: 1;
+}
+
+h2 {
+  font-size: rem(30);
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+[class*=__container] {
+  max-width: rem($containerWidth);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+//* ================================ RESET / Var ================================//
+
+$pc: $containerWidth;
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+//* ================================ RESET / Bem ================================//
